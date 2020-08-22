@@ -10,7 +10,6 @@
 <body>
 	<jsp:include page="header.jsp" /> 
     
-<%-- 	<c:if test="${EnteredAddress != true }">  --%>
 		<p><strong>Enter Shipping Address:</strong></p>
 		<form action="placeOrder">
 			<div>  
@@ -36,21 +35,6 @@
         	<br/>
         	<button>Continue</button>
 		</form>
-<%--  	</c:if> --%>
-
-<%-- 	<c:if test="${EnteredAddress == true }">  --%>
-<!-- 		<div><Strong>Shipping Address: </Strong></div> -->
-<%-- 		<div>Address Line 1: ${AddLine1}</div> --%>
-<%-- 		<div>Address Line 2: ${AddLine2}</div> --%>
-<%-- 		<div>City: ${City}</div> --%>
-<%-- 		<div>State: ${State}</div> --%>
-<%-- 		<div>Pin Code: ${PinCode}</div> --%>
-<!-- 		<br/> -->
-<!-- 		<nav>    -->
-<!-- 			<br/>        -->
-<!--         	<a href="orderSummary">View Order Summary</a>                -->
-<!--  		</nav>  -->
-<%-- 	</c:if> --%>
 	<br/>
 	<hr/>
 	<jsp:include page="footer.jsp" /> 
