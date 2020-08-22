@@ -7,7 +7,7 @@ use coronaKitDB;
 CREATE TABLE products(
 pid INT PRIMARY KEY,
 pname VARCHAR(30) NOT NULL,
-pcost DECIMAL NOT NULL,
+pcost DECIMAL(5,2) NOT NULL,
 pdesc VARCHAR(100)
 );
 
