@@ -38,14 +38,12 @@
         </c:otherwise>
     </c:choose>
     <br/>
- 	<c:if test="${addedMsg != null }">  
+    <c:if test="${addedMsg != null }">  
         <p>${addedMsg }</p> 
         <br/> 
  	</c:if>  
-    
     <nav>   
-   		<br/>       
-        <a href="showKit">Show Kit - Added Products</a>               
+   		 <a href="showKit">Kit Details - Added Products</a>               
     </nav> 
 	
 	<br/>

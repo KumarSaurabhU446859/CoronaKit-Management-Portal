@@ -27,7 +27,7 @@
 	<div>Pin Code: ${PinCode}</div>
 	<hr/>
 	
-	<p><strong>Product Summary:</strong></p>
+	<p><strong>Product Details:</strong></p>
 	<c:choose>  
         <c:when test="${kitAddedProducts == null || kitAddedProducts.isEmpty() }">  
             <p>No Products have been added to Kit</p>  

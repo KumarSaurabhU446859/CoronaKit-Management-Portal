@@ -9,17 +9,13 @@
 </head>
 <body>
     <jsp:include page="header.jsp" />
-	<br/>
-	<h4>Welcome!</h4>
+	<c:if test="${msg != null }">  
+        <p><strong>${msg }</strong></p> 
+ 	</c:if>
+	<h3>Welcome!</h3>
 	<p>Info:</p>
 	<p>Admin Module - Product Management</p>
 	<p>New User - To place order</p>
-	<br/>
- 	<c:if test="${msg != null }">  
-        <p><strong>${msg }</strong></p> 
-        <br/> 
- 	</c:if>  
-
 	<br/> 
 	<hr/>
 	<jsp:include page="footer.jsp" />

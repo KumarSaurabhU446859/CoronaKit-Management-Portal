@@ -12,7 +12,7 @@
     
     <p><strong>Add New Product</strong></p>
     
-    <form action="${'addProduct'}" method="post">
+    <form action="addProduct" method="post">
         <div>
             <label>Product Id</label>
             <input type="number" name="productId" required />

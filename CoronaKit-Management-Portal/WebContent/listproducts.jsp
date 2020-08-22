@@ -11,15 +11,12 @@
     
 	<jsp:include page="header.jsp" />
     	<nav>
-        	<a href="newProduct">Add New Product</a>
-        	<span>|</span>
-        	<a href="logout">Logout</a>        
-    	</nav>
-    <hr />
-     
+    		<a href="newProduct"><button>Add New Product</button></a>  
+        	<span> </span>  
+        	<a href="logout"><button>Logout</button></a>        
+    	</nav> 
     <c:if test="${msg != null }">  
-        <p><strong>${msg }</strong></p> 
-        <br/> 
+        <p><strong>${msg }</strong></p>  
  	</c:if>  
  	  
     <c:choose>

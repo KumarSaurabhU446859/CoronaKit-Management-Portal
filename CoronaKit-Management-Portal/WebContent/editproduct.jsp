@@ -12,7 +12,7 @@
     
     <p><strong>Edit Product</strong></p>
     
-    <form action="${'saveProduct'}" method="post">
+    <form action="saveProduct" method="post">
         <div>
             <label>Product Id</label>
             <input type="number" name="productId" value="${product.productId}" required />

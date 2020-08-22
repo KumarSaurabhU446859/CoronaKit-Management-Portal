@@ -35,13 +35,10 @@
             </table>
         </c:otherwise>
     </c:choose>
-    
+    <br/>
     <nav>          
-        <a href="addAnotherProduct">Add Another Product</a> 
-        <br/>
-        <br/>
+        <a href="addAnotherProduct"><button>Add More Products</button></a>
         <a href="placeorder.jsp"><button>Place Order</button></a>
-<!--         <a href="placeorder.jsp">Place Order</a>              -->
     </nav> 
 	<br/> 
 	<hr/>

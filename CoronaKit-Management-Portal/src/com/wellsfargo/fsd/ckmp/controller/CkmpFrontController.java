@@ -187,7 +187,7 @@ public class CkmpFrontController extends HttpServlet {
 	       try {
 	    	   productService.deleteProduct(productId);
 	           request.setAttribute("msg", "Product Record Deleted!");
-	           view = "listproducts.jsp";
+	           view = doListProducts(request, response);
 	       } catch (CoronaKitException e) {
 	           request.setAttribute("errMsg", e.getMessage());
 	           view = "errorPage.jsp";
@@ -200,7 +200,7 @@ public class CkmpFrontController extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("loginSuccess", false);
 		request.setAttribute("msg", "Logged Out Successfully!");
-        view = "login.jsp";
+        view = "index.jsp";
 		return view;
 	}
 	
@@ -222,6 +222,7 @@ public class CkmpFrontController extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("kitProduct", null);
 		session.setAttribute("kitAddedProducts", null);
+		
 		try {
 			List<Product> products = productService.getAllProducts();
 	        request.setAttribute("products", products);
@@ -270,9 +271,6 @@ public class CkmpFrontController extends HttpServlet {
 	
 	private String dolistAllProductsToAddAgain(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String view="";
-		//HttpSession session = request.getSession();
-		//session.setAttribute("kitProduct", null);
-		//session.setAttribute("kitAddedProducts", null);
 		try {
 			List<Product> products = productService.getAllProducts();
 	        request.setAttribute("products", products);
@@ -321,7 +319,8 @@ public class CkmpFrontController extends HttpServlet {
 			session.setAttribute("State", request.getParameter("State"));
 			session.setAttribute("PinCode", request.getParameter("PinCode"));
 		}
-		view="placeorder.jsp";
+		//view="placeorder.jsp";
+		view = doDisplayOrderSummary(request, response);
 		return view;		
 	}
 
