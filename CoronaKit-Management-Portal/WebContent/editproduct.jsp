@@ -15,7 +15,7 @@
     <form action="saveProduct" method="post">
         <div>
             <label>Product Id</label>
-            <input type="number" name="productId" value="${product.productId}" required />
+            <input type="number" name="productId" value="${product.productId}" required readonly />
         </div>    
         <div>
             <label>Product Name</label>
